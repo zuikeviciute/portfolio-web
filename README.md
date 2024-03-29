@@ -1,2 +1,3 @@
-# portfolio-web
-Portfolio website with contact information and links to projects. Made with Typescript, React and Tailwind.
+# Portfolio Website project!
+
+Read me file - in progress
