@@ -9,13 +9,13 @@ export function Contact() {
   const [buttonText, setButtonText] = useState("Gmail");
 
   return (
-    <div className="text-white py-4 pb-10">
-      <div className="max-w-6xl mx-auto px-4 flex justify-center space-x-4">
+    <div className="text-white py-7">
+      <div className="max-w-6xl mx-auto flex justify-center space-x-4 md:flex-wrap">
       <a
           href={"https://drive.google.com/file/d/1FbeppYbKA8YF4F62uyCj0FXxzhGXmdTl/view?usp=drive_link"}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block bg-[#191919] hover:bg-[#6F569E] rounded-full px-4 py-2 text-sm font-medium"
+          className="inline-block bg-[#191919] hover:bg-[#BBC842] rounded-full px-4 py-2 text-sm font-medium"
         >
           <div
             className={"flex flex-row justify-center items-center text-center"}
@@ -28,7 +28,7 @@ export function Contact() {
           href={linkedinUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block bg-[#191919] hover:bg-[#6F569E] rounded-full px-4 py-2 text-sm font-medium"
+          className="inline-block bg-[#191919] hover:bg-[#BBC842] rounded-full px-4 py-2 text-sm font-medium"
         >
           <div
             className={"flex flex-row justify-center items-center text-center"}
@@ -41,7 +41,7 @@ export function Contact() {
           href={githubUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block bg-[#191919] hover:bg-[#6F569E] rounded-full px-4 py-2 text-sm font-medium"
+          className="inline-block bg-[#191919] hover:bg-[#BBC842] rounded-full px-4 py-2 text-sm font-medium"
         >
           <div
             className={"flex flex-row justify-center items-center text-center"}
@@ -50,7 +50,7 @@ export function Contact() {
             <div className={"ml-2"}>Github</div>
           </div>
         </a>
-        <div className="inline-block bg-[#191919] hover:bg-[#6F569E] rounded-full px-4 py-2 text-sm font-medium">
+        <div className="inline-block bg-[#191919] hover:bg-[#BBC842] rounded-full px-4 py-2 text-sm font-medium">
           <button type="submit" onClick={() => {
             setButtonText("Copied");
             navigator.clipboard.writeText('zuikeviciute@gmail.com')
