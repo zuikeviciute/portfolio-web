@@ -10,38 +10,12 @@ export function Contact() {
 
   return (
     <div className="text-white py-7">
-      <div className="max-w-6xl mx-auto flex justify-center space-x-4 md:flex-wrap">
+      <div className="max-w-6xl mx-auto flex justify-center space-x-4">
       <a
-          href={"https://drive.google.com/file/d/1FbeppYbKA8YF4F62uyCj0FXxzhGXmdTl/view?usp=drive_link"}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-block bg-[#191919] hover:bg-[#BBC842] rounded-full px-4 py-2 text-sm font-medium"
-        >
-          <div
-            className={"flex flex-row justify-center items-center text-center"}
-          >
-            <FaFileAlt color={"#ffffff"} />
-            <div className={"ml-2"}>CV</div>
-          </div>
-        </a>
-        <a
-          href={linkedinUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-block bg-[#191919] hover:bg-[#BBC842] rounded-full px-4 py-2 text-sm font-medium"
-        >
-          <div
-            className={"flex flex-row justify-center items-center text-center"}
-          >
-            <FaLinkedin color={"#ffffff"} />
-            <div className={"ml-2"}>LinkedIn</div>
-          </div>
-        </a>
-        <a
           href={githubUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block bg-[#191919] hover:bg-[#BBC842] rounded-full px-4 py-2 text-sm font-medium"
+          className="inline-block bg-[#191919] rounded-full px-4 py-2 text-sm font-medium border-transparent border-2 hover:border-dashed hover:border-[#BBC842]"
         >
           <div
             className={"flex flex-row justify-center items-center text-center"}
@@ -50,7 +24,36 @@ export function Contact() {
             <div className={"ml-2"}>Github</div>
           </div>
         </a>
-        <div className="inline-block bg-[#191919] hover:bg-[#BBC842] rounded-full px-4 py-2 text-sm font-medium">
+      
+        <a
+          href={linkedinUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block bg-[#191919] rounded-full px-4 py-2 text-sm font-medium border-transparent border-2 hover:border-dashed hover:border-[#BBC842]"
+        >
+          <div
+            className={"flex flex-row justify-center items-center text-center"}
+          >
+            <FaLinkedin color={"#ffffff"} />
+            <div className={"ml-2"}>LinkedIn</div>
+          </div>
+        </a>
+        
+
+        <a
+          href={"https://drive.google.com/file/d/1FbeppYbKA8YF4F62uyCj0FXxzhGXmdTl/view?usp=drive_link"}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block bg-[#191919]  rounded-full px-4 py-2 text-sm font-medium border-transparent border-2 hover:border-dashed hover:border-[#BBC842]"
+        >
+          <div
+            className={"flex flex-row justify-center items-center text-center"}
+          >
+            <FaFileAlt color={"#ffffff"} />
+            <div className={"ml-2"}>Resume</div>
+          </div>
+        </a>
+        {/* <div className="inline-block bg-[#191919] rounded-full px-4 py-2 text-sm font-medium border-transparent border-2 hover:border-dashed hover:border-[#BBC842]">
           <button type="submit" onClick={() => {
             setButtonText("Copied");
             navigator.clipboard.writeText('zuikeviciute@gmail.com')
@@ -66,7 +69,7 @@ export function Contact() {
               <div className={"ml-2"}>{buttonText}</div>
             </div>
           </button>
-        </div>
+        </div> */}
       </div>
     </div>
   );
