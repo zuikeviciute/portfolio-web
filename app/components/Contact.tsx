@@ -15,12 +15,12 @@ export function Contact() {
           href={githubUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block bg-[#191919] rounded-full px-4 py-2 text-sm font-medium border-transparent border-2 hover:border-dashed hover:border-[#BBC842]"
+          className="inline-block bg-[#191919] hover:text-[#F17C60] rounded-lg px-4 py-2 text-sm font-medium"
         >
           <div
             className={"flex flex-row justify-center items-center text-center"}
           >
-            <FaGithub color={"#ffffff"} />
+            <FaGithub className="color-[#ffffff] hover:color-[#F17C60]"/>
             <div className={"ml-2"}>Github</div>
           </div>
         </a>
@@ -29,12 +29,12 @@ export function Contact() {
           href={linkedinUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block bg-[#191919] rounded-full px-4 py-2 text-sm font-medium border-transparent border-2 hover:border-dashed hover:border-[#BBC842]"
+          className="inline-block bg-[#191919] hover:text-[#F17C60] rounded-lg px-4 py-2 text-sm font-medium"
         >
           <div
             className={"flex flex-row justify-center items-center text-center"}
           >
-            <FaLinkedin color={"#ffffff"} />
+            <FaLinkedin className="color-[#ffffff] hover:color-[#F17C60]" />
             <div className={"ml-2"}>LinkedIn</div>
           </div>
         </a>
@@ -44,12 +44,12 @@ export function Contact() {
           href={"https://drive.google.com/file/d/1FbeppYbKA8YF4F62uyCj0FXxzhGXmdTl/view?usp=drive_link"}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block bg-[#191919]  rounded-full px-4 py-2 text-sm font-medium border-transparent border-2 hover:border-dashed hover:border-[#BBC842]"
+          className="inline-block bg-[#191919] hover:text-[#F17C60] rounded-lg px-4 py-2 text-sm font-medium"
         >
           <div
             className={"flex flex-row justify-center items-center text-center"}
           >
-            <FaFileAlt color={"#ffffff"} />
+            <FaFileAlt className="color-[#ffffff] hover:color-[#F17C60]"/>
             <div className={"ml-2"}>Resume</div>
           </div>
         </a>
