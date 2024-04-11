@@ -41,7 +41,7 @@ export function Contact() {
         
 
         <a
-          href={"https://drive.google.com/file/d/1FbeppYbKA8YF4F62uyCj0FXxzhGXmdTl/view?usp=drive_link"}
+          href={"https://drive.google.com/file/d/1dwsUHx89Y-kMr1jtp31qLKboCpHkG1SF/view?usp=sharing"}
           target="_blank"
           rel="noopener noreferrer"
           className="inline-block bg-[#191919] hover:text-[#F17C60] rounded-lg px-4 py-2 text-sm font-medium"
