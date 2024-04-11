@@ -24,7 +24,7 @@ export function Projects() {
         
         <div className="relative col-span-3 order-1">
           <a href={"https://github.com/zuikeviciute/portfolio-web"}>
-                <img src={"temp1.png"} alt="project image" className="object-cover h-56 w-full border-[#191919] border-2 rounded-lg hover:outline hover:outline-4 hover:outline-offset-0 outline-[#F17C60]" />
+                <img src={"assets/temp1.png"} alt="project image" className="object-cover h-56 w-full border-[#191919] border-2 rounded-lg hover:outline hover:outline-4 hover:outline-offset-0 outline-[#F17C60]" />
                 <div className={"absolute left-2 bottom-1 flex flex-row justify-center items-center text-center text-sm font-medium bg-[#191919] p-1 rounded-lg text-white"}>
                     {/* <FaGithub color={"#ffffff"} /> */}
                     <div className={"mx-2"}>{"Project 1"}</div>
@@ -34,7 +34,7 @@ export function Projects() {
 
         <div className="relative lg:col-span-2 order-2">
           <a href={"https://github.com/zuikeviciute/portfolio-web"}>
-                <img src={"temp2.png"} alt="project image" className="object-cover h-56 w-full border-[#191919] border-2 rounded-lg hover:outline hover:outline-4 hover:outline-offset-0 outline-[#F17C60]" />
+                <img src={"assets/temp2.png"} alt="project image" className="object-cover h-56 w-full border-[#191919] border-2 rounded-lg hover:outline hover:outline-4 hover:outline-offset-0 outline-[#F17C60]" />
                 <div className={"absolute left-2 bottom-1 flex flex-row justify-center items-center text-center text-sm font-medium bg-[#191919] p-1 rounded-lg text-white"}>
                     {/* <FaGithub color={"#ffffff"} /> */}
                     <div className={"mx-2"}>{"Project 2"}</div>
@@ -52,7 +52,7 @@ export function Projects() {
 
         <div className="relative col-span-3 order-4">
           <a href={"https://github.com/zuikeviciute/portfolio-web"}>
-                <img src={"temp3.png"} alt="project image" className="object-cover h-56 w-full border-[#191919] border-2 rounded-lg hover:outline hover:outline-4 hover:outline-offset-0 outline-[#BBC842]" />
+                <img src={"assets/temp3.png"} alt="project image" className="object-cover h-56 w-full border-[#191919] border-2 rounded-lg hover:outline hover:outline-4 hover:outline-offset-0 outline-[#BBC842]" />
                 <div className={"absolute left-2 bottom-1 flex flex-row justify-center items-center text-center text-sm font-medium bg-[#191919] p-1 rounded-lg text-white"}>
                     {/* <FaGithub color={"#ffffff"} /> */}
                     <div className={"mx-2"}>{"Project 3"}</div>
@@ -62,7 +62,7 @@ export function Projects() {
 
         <div className="relative lg:col-span-2 col-span-3 order-5">
           <a href={"https://github.com/zuikeviciute/portfolio-web"}>
-                <img src={"temp4.png"} alt="project image" className="object-cover h-56 w-full border-[#191919] border-2 rounded-lg hover:outline hover:outline-4 hover:outline-offset-0 outline-[#BBC842]" />
+                <img src={"assets/temp4.png"} alt="project image" className="object-cover h-56 w-full border-[#191919] border-2 rounded-lg hover:outline hover:outline-4 hover:outline-offset-0 outline-[#BBC842]" />
                 <div className={"absolute left-2 bottom-1 flex flex-row justify-center items-center text-center text-sm font-medium bg-[#191919] p-1 rounded-lg text-white"}>
                     {/* <FaGithub color={"#ffffff"} /> */}
                     <div className={"mx-2"}>{"Project 4"}</div>
