@@ -32,16 +32,14 @@ export function Projects() {
           <div className="text-white text-md font-medium">2023</div>
         </div>
 
-        <img src={"temp3.png"} alt="project image" className="relative col-span-3 order-4"></img>
-
-        {/* <div className="relative col-span-3 order-4">
+        <div className="relative col-span-3 order-4">
           <a href={"https://github.com/zuikeviciute/portfolio-web"}>
-                <img src={"/static/images/web.png"} alt="project image" className="object-cover h-56 w-full border-[#191919] border-2 rounded-lg hover:outline hover:outline-4 hover:outline-offset-0 outline-[#BBC842]" />
+                <img src={"uxui3.png"} alt="project image" className="object-cover h-56 w-full border-[#191919] border-2 rounded-lg hover:outline hover:outline-4 hover:outline-offset-0 outline-[#BBC842]" />
                 <div className={"absolute left-2 bottom-1 flex flex-row justify-center items-center text-center text-sm font-medium bg-[#191919] p-1 rounded-lg text-white"}>
                     <div className={"mx-2"}>{"Project 3"}</div>
                 </div>
             </a>
-        </div> */}
+        </div>
 
         <div className="relative lg:col-span-2 col-span-3 order-5">
           <a href={"https://github.com/zuikeviciute/portfolio-web"}>
