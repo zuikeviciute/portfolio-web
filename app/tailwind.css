@@ -4,26 +4,42 @@
 
 @layer components {
     .div-hover {
-      @apply hover:outline hover:outline-4 hover:outline-offset-0 outline-[#F56441];
+      @apply hover:outline hover:outline-4 hover:outline-offset-0 outline-[#FAA743];
     }
 
     .project-card {
-        @apply object-cover h-56 w-full border-2 rounded-lg;
+        @apply object-cover h-52 w-full border-2 border-[#F8F5ED] rounded-lg;
     }
 
-    .project-name {
+    .card-text {
         @apply absolute left-2 bottom-2 flex flex-row justify-center items-center text-center text-sm font-medium bg-[#191919] text-white p-1 rounded-lg;
     }
 
     .full-shadow {
-        @apply shadow-[-5px_5px_0px_0px_rgba(25,25,25)];
+        @apply shadow-[-5px_5px_0px_0px_rgba(182,180,176)];
     }
 
     .colour-box {
-        @apply pt-2 font-medium inline-block rounded-lg px-2 py-0 text-sm text-transparent size-16 hover:text-[#E9E7DB] text-center;
+        @apply pt-2 font-medium inline-block rounded-lg px-2 py-0 text-sm text-transparent size-16 hover:text-[#191919] text-center;
     }
 
     .colour-box-text {
         @apply pt-1 text-left text-wrap w-20 text-sm font-medium;
+    }
+
+    .icon-div {
+        @apply inline-block hover:text-[#FAA743] rounded-lg px-3 py-2 text-sm font-medium;
+    }
+
+    .text-title {
+        @apply text-3xl px-4 italic font-bold text-[#F8F5ED];
+    }
+
+    .text-body {
+        @apply text-base font-medium p-4 text-wrap text-[#F8F5ED];
+    }
+
+    .text-small {
+        @apply text-sm font-medium;
     }
   }
