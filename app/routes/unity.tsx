@@ -3,7 +3,7 @@ import { Contact } from "~/components/Contact";
 import { About } from "~/components/About";
 import { Footer } from "~/components/Footer";
 import { Breadcrumb } from "~/components/Breadcrumb";
-import { ProjectorDetails } from "~/components/ProjectorDetails";
+import { UnityDetails } from "~/components/UnityDetails";
 
 export const meta: MetaFunction = () => {
   return [
@@ -12,13 +12,12 @@ export const meta: MetaFunction = () => {
   ];
 };
 
-export default function Notes() {
+export default function Portfolio() {
   return (
-    <main className={"bg-[url('/static/images/paperMid.png')] w-screen h-screen overflow-x-hidden"}>
+    <main className={"paper-bg w-screen h-screen overflow-x-hidden"}>
       <Contact />
       <Breadcrumb />
-      <ProjectorDetails/>
-      
+      <UnityDetails/>
       <Footer />
     </main>
   );

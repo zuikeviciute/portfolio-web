@@ -3,21 +3,59 @@
 @tailwind utilities;
 
 @layer components {
-    .div-hover {
-      @apply hover:outline hover:outline-4 hover:outline-offset-0 outline-[#FAA743];
-    }
 
+    /* good  */
+
+    /* colours */
+    .text-color { @apply text-[#191919] }
+    .background-color { @apply text-[#F8F5ED] }
+    .primary-color { @apply text-[#BBC842] }
+    .secondary-color { @apply text-[#FAA743] }
+
+    /* text  */
+    .text-small { @apply text-sm font-medium text-[#636363]; }
+    .text-body { @apply text-base font-medium p-4 text-wrap text-color; }
+    .text-title { @apply text-2xl font-bold px-4 text-color; }
+
+    /* border-2 text-[#F8F5ED]  */
     .project-card {
-        @apply object-cover h-52 w-full border-2 border-[#F8F5ED] rounded-lg;
+        @apply object-cover h-52 w-full rounded-lg;
     }
 
-    .card-text {
-        @apply absolute left-2 bottom-2 flex flex-row justify-center items-center text-center text-sm font-medium bg-[#191919] text-white p-1 rounded-lg;
+    .card-hover {
+        @apply hover:bottom-2 hover:left-2 bottom-0 left-0;
     }
 
     .full-shadow {
-        @apply shadow-[-5px_5px_0px_0px_rgba(182,180,176)];
+        @apply shadow-[-7px_7px_0px_0px_rgba(25,25,25)];
     }
+
+    /* backgrounds and textures */
+    .paper-bg{
+        @apply bg-[url('/static/images/paperMid.png')];
+    }
+
+    .texture-bg{
+        @apply bg-[url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjgiPgo8cGF0aCBkPSJNLTIgMTBMMTAgLTJaTTEwIDZMNiAxMFpNLTIgMkwyIC0yIiBzdHJva2U9IiMyMjIiIHN0cm9rZS13aWR0aD0iMiI+PC9wYXRoPgo8L3N2Zz4=");];
+    }
+
+
+    /* could be fixed */
+    .primary-color {
+        @apply text-[#191919];
+    }
+
+    .secondary-color {
+        @apply text-[#191919];
+    }
+
+    
+
+    .card-text {
+        @apply left-2 bottom-2 flex flex-row justify-center items-center text-center text-sm font-medium bg-[#191919] text-white p-1 rounded-lg;
+    }
+
+    
 
     .colour-box {
         @apply pt-2 font-medium inline-block rounded-lg px-2 py-0 text-sm text-transparent size-16 hover:text-[#191919] text-center;
@@ -31,15 +69,11 @@
         @apply inline-block hover:text-[#FAA743] rounded-lg px-3 py-2 text-sm font-medium;
     }
 
-    .text-title {
-        @apply text-3xl px-4 italic font-bold text-[#F8F5ED];
-    }
+    
 
-    .text-body {
-        @apply text-base font-medium p-4 text-wrap text-[#F8F5ED];
-    }
+    
+    
+    
 
-    .text-small {
-        @apply text-sm font-medium;
-    }
+    
   }

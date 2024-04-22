@@ -2,8 +2,9 @@ import type { MetaFunction } from "@remix-run/node";
 import { Contact } from "~/components/Contact";
 import { About } from "~/components/About";
 import { Footer } from "~/components/Footer";
+import { DesignSystem } from "~/components/DesignSystem";
 import { Breadcrumb } from "~/components/Breadcrumb";
-import { ProjectorDetails } from "~/components/ProjectorDetails";
+import { Details } from "~/components/Details";
 
 export const meta: MetaFunction = () => {
   return [
@@ -12,13 +13,13 @@ export const meta: MetaFunction = () => {
   ];
 };
 
-export default function Notes() {
+export default function Portfolio() {
   return (
-    <main className={"bg-[url('/static/images/paperMid.png')] w-screen h-screen overflow-x-hidden"}>
+    <main className={"paper-bg w-screen h-screen overflow-x-hidden"}>
       <Contact />
       <Breadcrumb />
-      <ProjectorDetails/>
-      
+      <Details/>
+      <DesignSystem />
       <Footer />
     </main>
   );
