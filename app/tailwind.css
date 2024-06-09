@@ -4,8 +4,6 @@
 
 @layer components {
 
-    /* good  */
-
     /* colours */
     .text-color { @apply text-[#191919] }
     .background-color { @apply text-[#F8F5ED] }
@@ -19,7 +17,7 @@
 
     /* border-2 text-[#F8F5ED]  */
     .project-card {
-        @apply object-cover h-52 w-full rounded-lg;
+        @apply object-cover h-56 w-full;
     }
 
     .card-hover {
@@ -66,7 +64,15 @@
     }
 
     .icon-div {
-        @apply inline-block hover:text-[#FAA743] rounded-lg px-3 py-2 text-sm font-medium;
+        @apply inline-block hover:bg-[#FAA743] m-1 rounded-full px-2 py-1 text-sm font-medium;
+    }
+
+    .icon-div3 {
+        @apply inline-block bg-[#FAA743] m-1 rounded-lg px-2 py-1 text-sm font-medium;
+    }
+
+    .icon-div2 {
+        @apply inline-block hover:bg-[#E1DFD9] px-2 text-sm font-medium;
     }
 
     

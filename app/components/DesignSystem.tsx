@@ -61,21 +61,21 @@ export function DesignSystem() {
   const [buttonText, setButtonText] = useState("Copy");
 
   return (
-    <div className="py-4 px-4 text-[#191919] max-w-3xl mx-auto grid grid-cols-3 sm:grid-cols-3 md:grid-cols-6 lg:grid-cols-8 gap-4 rounded-lg">
+    <div className="py-4 px-4 max-w-3xl mx-auto grid grid-cols-3 sm:grid-cols-3 md:grid-cols-6 lg:grid-cols-8 gap-4 rounded-lg">
 
-      <div className={"lg:col-span-8 text-title text-[#191919] pb-3 pt-6 text-2xl px-0"}>Design System</div>
-      <div className={"lg:col-span-5 text-body text-[#191919] p-0"}>Colours</div>
-      <div className={"lg:col-span-3 text-body text-[#191919] p-0 pl-6"}>Fonts</div>
+      <div className={"lg:col-span-8 text-title pb-3 pt-6 text-2xl px-0 col-span-8"}>Design System</div>
+      <div className={"lg:col-span-5 text-body p-0 col-span-8 order-1"}>Colours</div>
+      <div className={"lg:col-span-3 text-body p-0 pt-6 lg:pt-0 lg:pl-6 pl-0 col-span-8 order-3 lg:order-2"}>Fonts</div>
 
+      <div className="col-span-8 lg:col-span-5 order-2 lg:order-3 flex flex-row gap-4 flex-wrap">
       {notes.map((note, index) => (
         <div key={index}>
           <div className={note.className}
-            onClick={() => {
-              setButtonText("Copied");
+            onClick={() => { setButtonText("Copied");
+            
               navigator.clipboard.writeText(note.color)
-              setTimeout(() => {
-                setButtonText("Copy");
-              }, 1000);
+
+              setTimeout(() => { setButtonText("Copy"); }, 1000);
             }}>
             <div className={"pt-1"}>{buttonText}</div>
             <div>{note.color}</div>
@@ -84,17 +84,19 @@ export function DesignSystem() {
         </div>
 
       ))}
+      </div>
+      
 
-      <div className="lg:col-span-3 col-span-3 lg:order-7 text-left ml-4">
+      <div className="lg:col-span-3 lg:order-4 text-left ml-4 order-4 col-span-8">
         <div className="p-2 text-3xl font-bold">Title 30px bold</div>
         <div className="p-2 text-base font-medium">Body 16px regualr / semibold</div>
         <div className="p-2 text-sm font-medium">Small 14px regular</div>
       </div>
 
-      <div className={"lg:col-span-5 text-body text-[#191919] p-0 pt-6 lg:order-8"}>Buttons</div>
-      <div className={"lg:col-span-3 text-body text-[#191919] p-0 pl-6 pt-6 lg:order-9"}>Cards</div>
+      <div className={"lg:col-span-5 text-body text-[#191919] p-0 pt-6 lg:order-8 order-5 col-span-8"}>Buttons</div>
+      <div className={"lg:col-span-3 text-body text-[#191919] p-0 lg:pl-6 pl-0 pt-6 lg:order-9 order-7 col-span-8"}>Cards</div>
 
-      <div className="ml-2 flex flex-row gap-4 lg:order-10">
+      <div className="ml-2 flex flex-row gap-4 lg:order-10 order-6 col-span-8">
         <div className={"left-2 bottom-2 flex flex-row justify-center text-nowrap items-center text-center text-sm font-medium bg-[#191919] text-white p-1 rounded-lg"}>
           <FaGithub color={"#ffffff"} />
           <div className={"mx-2"}>external button</div>

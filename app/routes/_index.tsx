@@ -1,8 +1,11 @@
 import type { MetaFunction } from "@remix-run/node";
-import { Contact } from "~/components/Contact";
-import { Projects } from "~/components/Projects";
+import { Navbar } from "~/components/Navbar";
+import { ProductTypes } from "~/components/ProductTypes";
+import { Products } from "~/components/Products";
+import { ProductPreview } from "~/components/ProductPreview";
 import { About } from "~/components/About";
-import { Tape } from "~/components/Tape";
+import { DesignSystem } from "~/components/DesignSystem";
+import { Details } from "~/components/Details";
 import { Footer } from "~/components/Footer";
 import { Breadcrumb } from "~/components/Breadcrumb";
 import { useState } from "react";
@@ -20,16 +23,16 @@ export default function Index() {
 
   return (
     <main className={"bg-[#F8F5ED] w-screen h-screen overflow-x-hidden"}>
-      <div className="paper-bg w-screen h-screen">
-        <Contact />
-        <About />
+      <Navbar />
+      <ProductTypes />
+      <ProductPreview />
 
-        <Projects />
-        {/* <Tape /> */}
+      {/* <About />
+      <Products />
+      <DesignSystem />
+      <Details /> */}
 
-        <Footer />
-      </div>
-
+      <Footer />
     </main>
   );
 }
