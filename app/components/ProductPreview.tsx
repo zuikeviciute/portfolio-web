@@ -19,21 +19,21 @@ const projects: ProjectType = [
 
   {
     title: "Portfolio",
-    backgroundImageUrl: "/static/images/temp2.png",
+    backgroundImageUrl: "/static/images/temp1.png",
     URL: "/portfolio",
     className: "col-span-3 md:col-span-2 lg:col-span-1",
     description: "this website!",
   },
   {
     title: "coming soon 1",
-    backgroundImageUrl: "/static/images/temp2.png",
+    backgroundImageUrl: "/static/images/temp1.png",
     URL: "/",
     className: "col-span-3 lg:col-span-1",
     description: "description",
   },
   {
     title: "coming soon 2",
-    backgroundImageUrl: "/static/images/temp2.png",
+    backgroundImageUrl: "/static/images/temp1.png",
     URL: "/",
     className: "col-span-3 md:col-span-2 lg:col-span-1",
     description: "descriptiond escriptio ndescriptio ndesc descript iondescriptionription descr iption description",
