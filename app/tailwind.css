@@ -72,14 +72,16 @@
     }
 
     .icon-div2 {
-        @apply inline-block hover:bg-[#E1DFD9] px-2 text-sm font-medium;
+        @apply hover:bg-[#E1DFD9] px-2 text-sm font-medium flex flex-row flex-wrap gap-2 text-body bg-[#F8F5ED];
     }
 
-    
+    .temp-circle {
+        @apply absolute w-16 h-16 z-40 top-14 left-56 bg-[#FAA743] rounded-full;
+    }
 
-    
-    
-    
+    .side-text {
+        @apply absolute text-small font-bold -rotate-90 -left-16 bottom-[42px];
+    }
 
     
   }
